@@ -6,7 +6,13 @@ let myArray2 = new Array(5);
 
 console.log(myArray, myNames, myArray2);
 
-// 2. Ajout / suppression / 'remplacement' de valeurs
+// 2. Accès aux éléments (via l'index)
+const myFirstElement = myNames[0];
+const my2ndElement = myNames[1];
+
+console.log(myFirstElement, my2ndElement);
+
+// 3. Ajout / suppression / 'remplacement' de valeurs
 
 // Ajout
 myArray.push("Toto");
@@ -30,7 +36,7 @@ console.log(myArray, myNames, myArray2);
 myNames.splice(1, 0, "Toto");
 console.log(myArray, myNames, myArray2);
 
-// 3. Parcourir un tableau
+// 4. Parcourir un tableau
 for (name of myNames) {
   console.log(name);
 }
